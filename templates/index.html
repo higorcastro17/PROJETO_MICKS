@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <title>Micks Telecom - Equipment Registration</title>
-    <link href="{{ url_for('static', filename='_css/style.css')}}" rel="stylesheet"> 
+    <!--<link href="style.css')}}" rel="stylesheet">-->
     <link href="{{ url_for('static', filename='_css/sb-admin-2.css')}}" rel="stylesheet">
     <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="{{ url_for('static', filename='_css/sb-admin-2.min.css')}}" rel="stylesheet">
 </head>
 
-     <!--<center><label><img src="{{ url_for('static', filename='_image/logo-Micks-horizontal-new-1.6site.png')}}"</center>-->
-        <!-- Page Wrapper -->
+<body id="page-top">
+
+
   <div id="wrapper">
 
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url_for('static', filename='index.html')}}">
         <div class="sidebar-brand-icon rotate-n-15">
           <img width="70" src= "{{ url_for('static', filename='_image/Micks_logo.png')}}" class="fas fa-laugh-wink"/>
         </div>
@@ -33,7 +36,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -667,5 +670,5 @@
     
 
    
-
+</body>
 </html>
