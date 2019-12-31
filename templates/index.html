@@ -28,7 +28,7 @@
             <img width="55" height="50" src= "{{ url_for('static', filename='_image/Micks_logo.png')}}"/>  
         </div>
 
-        <div class="sidebar-brand-text mx-3">EQUIPMENT REGISTRATION</div>
+        <div class="sidebar-brand-text mx-3">GESTÃO DE EQUIPAMENTOS</div>
           </a>
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
@@ -52,13 +52,13 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Menu Principal</span>
+          <span>Painel de Controle</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Lista de Equipamentos:</h6>
-            <a class="collapse-item" href="{{ url_for('static', filename='buttons.html')}}" rel="stylesheet">Buttons</a>
-            <a class="collapse-item" href="{{ url_for('static', filename='cards.html')}}" rel="stylesheet">Cards</a>
+            <h6 class="collapse-header">MENU PRINCIPAL</h6>
+            <a class="collapse-item" href="{{ url_for('static', filename='buttons.html')}}" rel="stylesheet">Equipamentos</a>
+            <a class="collapse-item" href="{{ url_for('static', filename='cards.html')}}" rel="stylesheet">Usuarios</a>
           </div>
         </div>
       </li>
@@ -650,21 +650,21 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}" rel="stylesheet"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}" rel="stylesheet"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js')}}" rel="stylesheet"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="{{ url_for('static', filename='_js/sb-admin-2.min.js')}}" rel="stylesheet"></script>
 
   <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="{{ url_for('static', filename='vendor/chart.js/Chart.min.js')}}" rel="stylesheet"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="{{ url_for('static', filename='_js/demo/chart-area-demo.js')}}" rel="stylesheet"></script>
+  <script src="{{ url_for('static', filename='_js/demo/chart-pie-demo.js')}}" rel="stylesheet"></script>
 
     
 
