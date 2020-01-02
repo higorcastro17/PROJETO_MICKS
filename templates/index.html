@@ -4,8 +4,11 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Micks Telecom - Equipment Registration</title>
     
     <link href="{{ url_for('static', filename='_css/style.css')}}" rel="stylesheet">
@@ -179,14 +182,15 @@
 
           <!-- Content Row -->
           <div class="row">
+      {% extends "footer.html" %}
       <!-- Footer -->
-      <footer class="sticky-footer bg-white">
+      <!--<footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>Copyright &copy; Equipment Registration 2020</span>
           </div>
         </div>
-      </footer>
+      </footer>-->
       <!-- End of Footer -->
 
     </div>
@@ -241,3 +245,4 @@
    
 </body>
 </html>
+

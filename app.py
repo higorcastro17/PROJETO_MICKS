@@ -2,6 +2,8 @@ from flask import Flask,render_template, url_for
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from flask_sqlalchemy import SQLAlchemy
+from require import export
+
 
 app = Flask(__name__)
 
@@ -18,7 +20,6 @@ def dashboard():
 @app.route('/static/equipamentos.html')
 def equipamentos():
     return render_template('equipamentos.html')
-
 
 
 
