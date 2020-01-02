@@ -25,9 +25,9 @@
 
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
       
-     
+     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url_for('static', filename='index.html')}}" rel="stylesheet">
         <div class="sidebar-brand-icon rotate-n-15">
-          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url_for('static', filename='index.html')}}" rel="stylesheet">  
+            
           
             <img width="55" height="50" src= "{{ url_for('static', filename='_image/Micks_logo.png')}}"/>  
         </div>
@@ -54,8 +54,8 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
           <span>Painel de Controle</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -182,7 +182,9 @@
 
           <!-- Content Row -->
           <div class="row">
-      {% extends "footer.html" %}
+      
+        {% extends "footer.html" %}
+          </div>
       <!-- Footer -->
       <!--<footer class="sticky-footer bg-white">
         <div class="container my-auto">
