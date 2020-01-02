@@ -1,4 +1,3 @@
-{% extends "index.html" %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,9 +25,9 @@
 
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
       
-     
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url_for('static', filename='index.html')}}" rel="stylesheet">
         <div class="sidebar-brand-icon rotate-n-15">
-          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url_for('static', filename='index.html')}}" rel="stylesheet">  
+            
           
             <img width="55" height="50" src= "{{ url_for('static', filename='_image/Micks_logo.png')}}"/>  
         </div>
